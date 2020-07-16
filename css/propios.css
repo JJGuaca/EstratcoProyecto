@@ -7,6 +7,9 @@
 .bg-dark3{
 	background-color: #435a69;
 }
+.bg-dark3{
+	background-color: #435a69;
+}
 
 .colorAgua{
 	color: #66e4f2;
@@ -29,4 +32,13 @@ a>span{
 }
 a{
 	font-family: 'Poppins-SemiBold';
+}
+.flotante{
+	border: none;
+    display: block;
+    position: fixed;
+    bottom: 50%;
+    right: -2%;
+    z-index: 1;
+    transform: rotate(-90deg);
 }
