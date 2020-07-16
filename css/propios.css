@@ -16,3 +16,8 @@
     padding: 0rem 0rem !important;
     margin-bottom: 0rem;
 }*/
+
+.navbar-brand>img {
+    display: block;
+    width: 60%;
+}
