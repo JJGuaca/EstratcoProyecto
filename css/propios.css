@@ -33,12 +33,15 @@ a>span{
 a{
 	font-family: 'Poppins-SemiBold';
 }
+a>button{
+	font-family: 'Poppins-Light';
+}
 .flotante{
 	border: none;
     display: block;
     position: fixed;
     bottom: 50%;
-    right: -2%;
+    right: -3.5%;
     z-index: 1;
     transform: rotate(-90deg);
 }
