@@ -57,3 +57,7 @@ a>button{
 div>p{
     margin-bottom: 0rem;
 }
+.card-img-top {
+    width: 10%;
+    margin:5rem 3rem;
+}
