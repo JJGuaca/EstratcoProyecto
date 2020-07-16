@@ -24,3 +24,9 @@
     display: block;
     width: 60%;
 }
+a>span{
+	font-family: 'Poppins-Thin';
+}
+a{
+	font-family: 'Poppins-SemiBold';
+}

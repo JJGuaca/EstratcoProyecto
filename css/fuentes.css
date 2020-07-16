@@ -1,0 +1,49 @@
+@font-face {
+font-family:'Poppins-Bold';
+src:url('../font/Poppins-Bold.ttf');
+src: url('../font/Poppins-Bold.woff')format('woff'),
+	url('../font/Poppins-Bold.otf')format('opentype');
+}
+
+@font-face{
+
+	font-family:'Poppins-Thin';
+src:url('../font/Poppins-Thin.ttf');
+src: url('../font/Poppins-Thin.woff')format('woff'),
+	url('../font/Poppins-Thin.otf')format('opentype');
+}
+@font-face{
+
+	font-family:'Poppins-ExtraBold';
+src:url('../font/Poppins-ExtraBold.ttf');
+src: url('../font/Poppins-ExtraBold.woff')format('woff'),
+	url('../font/Poppins-ExtraBold.otf')format('opentype');
+}
+@font-face{
+
+	font-family:'Poppins-ExtraLight';
+src:url('../font/Poppins-ExtraLight.ttf');
+src: url('../font/Poppins-ExtraLight.woff')format('woff'),
+	url('../font/Poppins-ExtraLight.otf')format('opentype');
+}
+@font-face{
+
+	font-family:'Poppins-Light';
+src:url('../font/Poppins-Light.ttf');
+src: url('../font/Poppins-Light.woff')format('woff'),
+	url('../font/Poppins-Light.otf')format('opentype');
+}
+
+@font-face{
+
+	font-family:'Poppins-Medium';
+src:url('../font/Poppins-Medium.ttf');
+src: url('../font/Poppins-Medium.woff')format('woff'),
+	url('../font/Poppins-Medium.otf')format('opentype');
+}
+@font-face{
+	font-family:'Poppins-SemiBold';
+src:url('../font/Poppins-SemiBold.ttf');
+src: url('../font/Poppins-SemiBold.woff')format('woff'),
+	url('../font/Poppins-SemiBold.otf')format('opentype');
+}

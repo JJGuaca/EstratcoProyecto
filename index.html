@@ -5,56 +5,54 @@
 	<title>Home</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/propios.css">
+	<link rel="stylesheet" href="css/fuentes.css">
 </head>
-<body>		
+<body>
+	<!--MENU NAVBAR-->
 	<nav class="navbar navbar-dark bg-dark1 sticky-top">
-		<div class="container">
-			<a href="#" class="navbar-brand d-flex align-items-center p-3" style="position: relative;right: 10%">
-				<img src="img/logo-home-estratco.png" alt="LOGO ESTRATCO">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" style="position: relative; left: 10%;">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="navbar-collapse collapse bg-dark1" id="navbarHeader">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-11 offset-md-2 py-3">							
-							<a href="#secc1" class="p-3">Seccion1</a>
-							<a href="#secc2" class="p-3">Seccion2</a>
-							<a href="#secc3" class="p-3">Seccion3</a>
-							<a href="#secc4" class="p-3">Seccion4</a>
-							<a href="#secc5" class="p-3">Seccion5</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</nav>
+      <a class="navbar-brand" href="#secc1">
+      	<img src="img/logo-home-estratco.png" alt="LOGO ESTRATCO">
+      </a>
+      <div class="ml-auto p-3 navbar-text nav-item">
+      	<a class="nav-link" href="#secc1"><span class="colorAgua" style="letter-spacing: 0.5rem;">| contáctenos</span></a>
+      </div>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse justify-content-md-center" id="navbarsExample01" style="">
+        <ul class="list-inline">
+          <li class="list-inline-item navbar-text nav-item">
+            <a class="nav-link" href="#secc1"><p class="colorAgua">Seccion1</p></a>
+          </li>
+          <li class="list-inline-item navbar-text nav-item">
+            <a class="nav-link" href="#secc2"><p class="colorAgua">Seccion2</p></a>
+          </li>
+          <li class="list-inline-item navbar-text nav-item">
+            <a class="nav-link" href="#secc3"><p class="colorAgua">Seccion3</p></a>
+          </li>
+          <li class="list-inline-item navbar-text nav-item">
+            <a class="nav-link" href="#secc4"><p class="colorAgua">Seccion4</p></a>
+          </li>
+          <li class="list-inline-item navbar-text">
+            <a class="nav-link" href="#secc5"><p class="colorAgua">Seccion5</p></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
 
 	<main role="main">
+
+		<!--SECCION 1-->
 
 		<section id="secc1" class="jumbotron text-center" style="padding-top: 1rem; padding: 0rem 0rem;" >
 			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="img/slider1/img1.jpg" class="imgSlider" alt="IMG1">
-					</div>
-					<div class="carousel-item">
-						<img src="img/slider1/img2.jpg" class="imgSlider" alt="IMG2">
-					</div>
-					<div class="carousel-item">
-						<img src="img/slider1/img3.jpg" class="	imgSlider" alt="IMG3">
+						<img src="img/slider1/slide.png" class="imgSlider" alt="SLIDE">
 					</div>
 				</div>
-				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
 			</div>
 		</section>
 		<section id="secc2">
