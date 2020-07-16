@@ -54,3 +54,6 @@ a>button{
     z-index: 1;
     transform: rotate(-90deg);
 }
+div>p{
+    margin-bottom: 0rem;
+}
