@@ -73,3 +73,37 @@ div>p{
     flex: 1 1 auto;
     padding: 0rem;
 }
+
+
+.carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 0%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    left: 91%;
+}
+.carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 0%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    left: 77%;
+}
