@@ -1,8 +1,8 @@
-function scale(){
-	var btn = document.getElementById('redpro');
-	btn.style.setProperty('transform','scale(1.1)'); 
+function scale(btn){
+	var btnAc = document.getElementById(btn.id);
+	btnAc.style.setProperty('transform','scale(1.1)'); 
 }
-function scalenot(){
-	var btn = document.getElementById('redpro');
-	btn.style.setProperty('transform','scale(1)'); 
+function scalenot(btn){
+	var btnAc = document.getElementById(btn.id);
+	btnAc.style.setProperty('transform','scale(1)');
 }

@@ -12,9 +12,6 @@
 .bg-dark3{
 	background-color: #435a69;
 }
-.bg-dark3{
-	background-color: #435a69;
-}
 
 .colorAgua{
 	color: #66e4f2;
@@ -57,7 +54,22 @@ a>button{
 div>p{
     margin-bottom: 0rem;
 }
-.card-img-top {
+
+.card-img {
     width: 10%;
-    margin:5rem 3rem;
+    margin: 5rem 4rem;
+}
+.card-img-overlay {
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    bottom: 73%;
+    left: 33%;
+    padding: 0rem;
+    margin: 1rem;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0rem;
 }
