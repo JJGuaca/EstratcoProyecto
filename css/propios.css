@@ -118,3 +118,23 @@ div>p{
     opacity: .5;
     left: 90%;
 }
+
+.textCarr{
+    font-size: 135%;
+    color: #fff;
+    font-family: 'Poppins-Thin';
+    letter-spacing: 1px;
+    line-height: 22px;
+    margin: 0rem 1rem;
+    padding: 0rem 1rem;
+}
+.textCarr2{
+    font-size: 135%;
+    color: #566f80ba;
+    font-family: 'Poppins-Medium';
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-weight: 100;
+    margin: 0rem 1rem;
+    padding: 0rem 1rem;
+}
