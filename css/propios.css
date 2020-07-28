@@ -16,6 +16,17 @@
 .colorAgua{
 	color: #66e4f2;
 }
+.marcaAgua{
+    font-size: 1000%;
+    letter-spacing: 65px;
+    color: #c1c1c117;
+    position: relative;
+    top: 57px;
+    z-index: 1;
+    margin: -6rem 1rem;
+    padding: unset;
+    font-family: 'Poppins-Medium';
+}
 .imgSlider{
 	height: 500px;
 	width: 100%;
@@ -89,7 +100,7 @@ div>p{
     color: #fff;
     text-align: center;
     opacity: .5;
-    left: 91%;
+    left: 100%;
 }
 .carousel-control-prev {
     position: absolute;
@@ -105,5 +116,5 @@ div>p{
     color: #fff;
     text-align: center;
     opacity: .5;
-    left: 77%;
+    left: 90%;
 }
