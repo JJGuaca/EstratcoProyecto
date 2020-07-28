@@ -28,7 +28,7 @@
     font-family: 'Poppins-Medium';
 }
 .imgSlider{
-	height: 500px;
+	height: auto;
 	width: 100%;
 }
 .nosotros{
@@ -57,8 +57,8 @@ a>button{
 	border: none;
     display: block;
     position: fixed;
-    bottom: 50%;
-    right: -3%;
+    bottom: 25%;
+    right: -52px;
     z-index: 1;
     transform: rotate(-90deg);
 }
