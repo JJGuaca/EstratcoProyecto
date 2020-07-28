@@ -138,3 +138,8 @@ div>p{
     margin: 0rem 1rem;
     padding: 0rem 1rem;
 }
+
+@media (min-width: 360px)
+.container {
+    max-width: 1000px;
+}
