@@ -19,7 +19,7 @@
 .marcaAgua{
     font-size: 1000%;
     letter-spacing: 65px;
-    color: #c1c1c117;
+    color: rgba(193, 193, 193, 0.09);
     position: relative;
     top: 57px;
     z-index: 1;
