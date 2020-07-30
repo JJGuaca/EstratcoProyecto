@@ -181,11 +181,11 @@ div>p{
         width: 250px;
 }
 .slider1::before,.slider1::after {
-    background: linear-gradient(to right, #fff 0%,#fff0 100%);
+    /*background: linear-gradient(to right, rgb(255, 255, 255, 1) 0%,rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 100%;
     position: absolute;
-    width: 25%;
+    width: 25%;*/
 }    
 .slider1::after {
         right: 0;
@@ -205,3 +205,88 @@ div>p{
     100% { transform: translateX(calc(-100px * 10))}
     0%{transform: translateX(0);}
 }
+
+
+
+/*IEXPLORER 10+*/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+.imagen{
+     width: 150px;
+}
+.conten {
+    align-items: center; 
+    justify-content: center; 
+}
+.slider1 {
+    background: white; 
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125); 
+    height: 140px; 
+    margin: auto; 
+    overflow:hidden; 
+    position: relative; 
+    width:100%; 
+}
+
+.slider2 {
+        animation: scroll 40s linear infinite; 
+        display: flex; 
+        width: calc(100px * 10); 
+}
+    
+.slider3 {
+        height: 100px;
+        width: auto;
+}
+.slider1::before,.slider1::after {
+    /*background: linear-gradient(to right, rgb(255, 255, 255, 1) 0%,rgba(255, 255, 255, 0) 100%);
+    content: "" ;
+    height: 100% ;
+    position: absolute ;
+    width: 25% ;*/
+} 
+ 
+.slider1::after {
+     content: "" ;
+    height: 1px ;
+    position: absolute ;
+    width: 1px ;
+        right: unset; 
+        top:unset; 
+        transform: unset; 
+        
+}
+
+.slider1::before {
+    content: "" ;
+    height: 1px ;
+    position: absolute ;
+    width: 1px ;
+    left: unset; 
+    top: unset; 
+    z-index: unset;        
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0);  }
+    100% { transform: translateX(calc(-100px * 10))}
+    0%{transform: translateX(0); }
+}
+
+}
+
+/*IE 11+
+
+_:-ms-fullscreen, :root .slider1::before,.slider1::after {
+ 
+    background: linear-gradient(to right, rgb(255, 255, 255, 1) 0%,rgba(255, 255, 255, 0) 100%);
+    content: "" ;
+    height: 100% ;
+    position: absolute ;
+    width: 25% ;
+  }*/
+
+  _:-ms-fullscreen, :root scroll{
+    animation: 1000ms ease 0s normal none infinite Pulse-long;
+  }

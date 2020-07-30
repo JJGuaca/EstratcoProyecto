@@ -1,0 +1,46 @@
+.imagen{
+     width: 150px;
+}
+.conten {
+    align-items: center; 
+    justify-content: center; 
+}
+.slider1 {
+    background: white; 
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125); 
+    height: 140px; 
+    margin: auto; 
+    overflow:hidden; 
+    position: relative; 
+    width:100%; 
+}
+
+.slider2 {
+        animation: scroll 40s linear infinite; 
+        display: flex; 
+        width: calc(100px * 10); 
+}
+    
+.slider3 {
+        height: 100px;
+        width: auto;
+}
+  
+.slider1::after {
+        right: unset; 
+        top:unset; 
+        transform: unset; 
+        
+}
+
+.slider1::before {
+    left: unset; 
+    top: unset; 
+    z-index: unset;        
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0);  }
+    100% { transform: translateX(calc(-100px * 10))}
+    0%{transform: translateX(0); }
+}
