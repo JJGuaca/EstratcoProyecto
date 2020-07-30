@@ -38,6 +38,7 @@
 .navbar-brand>img {
     display: block;
     width: 60%;
+    height: auto;
 }
 
 .btnPropio: hover img{
@@ -143,14 +144,14 @@ div>p{
     animation-play-state: paused;
 }
 
-a>img:hover{
+.imagen:hover{
     transform: scale(1.1);
 }
-a>img{
-    padding-top: 1rem;
-    margin-top: 1rem;
-    padding-bottom: 1rem:
-    margin-bottom:1rem; 
+.imagen{
+     width: 200px;
+    height: 100px;
+    padding: 1rem 0rem;
+    margin: 1rem 0rem;
 }
 
 /*--------------------slider carrusel logos---------------------*/
@@ -162,7 +163,7 @@ a>img{
 .slider1 {
     background: white;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-    height: 150px;
+    height: 140px;
     margin: auto;
     overflow:hidden;
     position: relative;
