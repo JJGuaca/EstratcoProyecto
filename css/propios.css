@@ -27,6 +27,18 @@
     padding: unset;
     font-family: 'Poppins-Medium';
 }
+.marcaAgua2{
+    font-size: 800%;
+    letter-spacing: 10px;
+    color: rgba(193, 193, 193, 0.18);
+    position: relative;
+    top: 100px;
+    z-index: 1;
+    font-family: 'Poppins-Bold';
+    transform: rotate(-90deg);
+    left: 40%;
+    font-weight: 700;
+}
 .imgSlider{
 	height: auto;
 	width: 100%;
