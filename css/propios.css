@@ -29,15 +29,15 @@
 }
 .marcaAgua2{
     font-size: 800%;
-    letter-spacing: 10px;
     color: rgba(193, 193, 193, 0.18);
-    position: relative;
-    top: 100px;
+    position: absolute;
     z-index: 1;
+    left: 17%;
+    bottom: 36%;
     font-family: 'Poppins-Bold';
     transform: rotate(-90deg);
-    left: 40%;
     font-weight: 700;
+    letter-spacing: 10px;
 }
 .imgSlider{
 	height: auto;
@@ -302,3 +302,18 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
   _:-ms-fullscreen, :root scroll{
     animation: 1000ms ease 0s normal none infinite Pulse-long;
   }
+
+
+@media (max-width: 991px){
+    .marcaAgua2 {
+        font-size:600%;
+        left:55%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .marcaAgua2 {
+        font-size: 700%;
+        left: 0%;
+        letter-spacing: 25px;
+    }
+}
