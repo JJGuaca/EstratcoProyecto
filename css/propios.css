@@ -26,6 +26,8 @@
     margin: -6rem 1rem;
     padding: unset;
     font-family: 'Poppins-Medium';
+    width: 100%;
+    text-align: center;
 }
 .marcaAgua2{
     font-size: 800%;
