@@ -16,6 +16,14 @@
 .colorAgua{
 	color: #66e4f2;
 }
+
+.imagenCircular{
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    left: 50px;
+    position: relative;
+}
 .marcaAgua{
     font-size: 1000%;
     letter-spacing: 65px;
@@ -297,6 +305,11 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
         font-size:600%;
         left:55%;
     }
+    .imagenCircular{
+        left: 30%;
+        height: 300px;
+        width: 300px;
+    }
 
 }
 @media (min-width: 992px) and (max-width: 1199px){
@@ -304,5 +317,10 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
         font-size: 700%;
         left: 0%;
         letter-spacing: 25px;
+    }
+    .imagenCircular{
+        left: 15%;
+        height: 200px;
+        width: 200px;
     }
 }
