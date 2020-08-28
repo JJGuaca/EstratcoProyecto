@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Home</title>
+	<title id="titulo">Home</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<!--[if IE]>-->
 	<link rel="stylesheet" type="text/css" href="css/internetexplorer.css" />
@@ -68,9 +68,9 @@
 					</div>
 					<div class="col-md-5"><p class="pt-5 p-2" style="line-height: 2rem; font-size: 17px; text-align: end;font-family: 'Poppins-Medium' ;    margin-right: 2rem;letter-spacing: 1.5px;"><strong>Estrategia & Conocimiento apoya la transformación de las empresas y las personas</strong><br> gestionando y promoviendo el desaroollo de valores y capacidades, por medio de la capacitación, itilizando inteligentemente las tecnologías de la información y la comunicación, la gestion del conocimiento, la logistica y la dministración.</p>
 						<div>
-							<button class="btn" style="background-color: transparent;padding: 0rem .75rem;">
+							<a href="nosotros.php"class="btn" style="background-color: transparent;padding: 0rem .75rem;">
 								<img src="img/slider1/boton-red-profesional.png" alt="RED" style="width: 70%;" onmouseover="scale(this);" onmouseout="scalenot(this);" id="redpro">
-							</button>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -93,9 +93,9 @@
 					</div>                  
 						<div class="card-body">
 							<p style="font-family: 'Poppins-Medium'; margin: 0rem 4rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, repudiandae!</p>
-							<button class="btn px-4 py-3" style="background-color: transparent;">
+							<a href="nosotros.php#secc3" class="btn px-4 py-3" style="background-color: transparent;">
 								<img src="img/slider1/mas-informacion-azul.png" alt="RED" style="width: 65%;" onmouseover="scale(this);" onmouseout="scalenot(this);" id="mas1">
-							</button>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -111,9 +111,9 @@
 						</div>
 						<div class="card-body">
 							<p style="font-family: 'Poppins-Medium'; margin: 0rem 4rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, repudiandae!</p>
-							<button class="btn px-4 py-3" style="background-color: transparent;">
+							<a href="nosotros.php#secc4"class="btn px-4 py-3" style="background-color: transparent;">
 								<img src="img/slider1/mas-informacion-azul.png" alt="RED" style="width: 65%;" onmouseover="scale(this);" onmouseout="scalenot(this);" id="mas2">
-							</button>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -129,9 +129,9 @@
 						</div>
 						<div class="card-body">
 							<p style="font-family: 'Poppins-Medium'; margin: 0rem 4rem;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, repudiandae!</p>
-							<button class="btn px-4 py-3" style="background-color: transparent;">
+							<a href="nosotros.php#secc4" class="btn px-4 py-3" style="background-color: transparent;">
 								<img src="img/slider1/mas-informacion-azul.png" alt="RED" style="width: 65%;" onmouseover="scale(this);" onmouseout="scalenot(this);" id="mas3">
-							</button>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -170,9 +170,9 @@
 													<strong strong  style="font-family: 'Poppins-Light'; color: #b6b1b1a6;">Lorem ipsum.
 													</strong>
 												</p>
-												<button class="btn" style="background-color: transparent;">
+												<a href="educacion.php" class="btn" style="background-color: transparent;">
 													<img src="img/slider1/mas-informacion-.png" alt="RED" style="width: 50%;position: relative;right: 4.2rem;" onmouseover="scale(this);" onmouseout="scalenot(this);" id="mas2Sec4sl1">
-												</button>
+												</a>
 											</div>
 											<div class="card-body px-1">
 												<p class="card-text text-justify" style="font-family: 'Poppins-ExtraLight'; letter-spacing:3px; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, dolor unde dolorem dolorum recusandae esse repudiandae? Deserunt laudantium ratione cupiditate quaerat maxime, magni culpa vel vitae omnis nihil, eos repellat cum, eum similique in iste provident iusto? Quod voluptatum quae explicabo doloremque molestias repellat, consectetur cupiditate. In ipsa accusamus corrupti.</p>
@@ -209,9 +209,9 @@
 												<p class="text-right" style="font-family: 'Poppins-ExtraLight'; color:#b0b0b0;">Lorem.<br><strong  style="font-family: 'Poppins-Light'; color: #b6b1b1a6;">108 Lorem</strong></p>
 												<p class="text-right" style="font-family: 'Poppins-ExtraLight'; color:#b0b0b0;">Lorem.<br><strong strong  style="font-family: 'Poppins-Light'; color: #b6b1b1a6;">Lorem ipsum dolor.</strong></p>
 													<p class="text-right" style="font-family: 'Poppins-ExtraLight'; color:#b0b0b0;">Lorem.<br><strong strong  style="font-family: 'Poppins-Light'; color: #b6b1b1a6;">Lorem ipsum.</strong></p>
-													<button class="btn" style="background-color: transparent;">
+													<a href="educacion.php" class="btn" style="background-color: transparent;">
 														<img src="img/slider1/mas-informacion-.png" alt="RED" style="width: 50%;position: relative;right: 4.2rem;" onmouseover="scale(this);" onmouseout="scalenot(this);" id="mas2Sec4sl2">
-													</button>
+													</a>
 											</div>
 											<div class="card-body px-1">
 												<p class="card-text text-justify" style="font-family: 'Poppins-ExtraLight'; letter-spacing:3px; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, dolor unde dolorem dolorum recusandae esse repudiandae? Deserunt laudantium ratione cupiditate quaerat maxime, magni culpa vel vitae omnis nihil, eos repellat cum, eum similique in iste provident iusto? Quod voluptatum quae explicabo doloremque molestias repellat, consectetur cupiditate. In ipsa accusamus corrupti.</p>
@@ -247,9 +247,9 @@
 												<h2 class="card-title colorAgua w-10" style="font-family: 'Poppins-SemiBold';letter-spacing: 4px;line-height: 1.8rem;font-weight: 700;    font-size: 90%;">Lorem ipsum dolor sit amet.</h2>
 														<p class="text-right" style="font-family: 'Poppins-ExtraLight'; color:#b0b0b0;">Lorem.<br><strong  style="font-family: 'Poppins-Light'; color: #b6b1b1a6;">108 Lorem</strong></p>
 														<p class="text-right" style="font-family: 'Poppins-ExtraLight'; color:#b0b0b0;">Lorem.<br><strong strong  style="font-family: 'Poppins-Light'; color: #b6b1b1a6;">Lorem ipsum dolor.</strong></p><p class="text-right" style="font-family: 'Poppins-ExtraLight'; color:#b0b0b0;">Lorem.<br><strong strong  style="font-family: 'Poppins-Light'; color: #b6b1b1a6;">Lorem ipsum.</strong></p>
-														<button class="btn" style="background-color: transparent;">
+														<a href="educacion.php" class="btn" style="background-color: transparent;">
 															<img src="img/slider1/mas-informacion-.png" alt="RED" style="width: 50%;position: relative;right: 4.2rem;" onmouseover="scale(this);" onmouseout="scalenot(this);" id="mas2Sec4sl3">
-														</button>
+														</a>
 											</div>
 											<div class="card-body px-1">
 												<p class="card-text text-justify" style="font-family: 'Poppins-ExtraLight'; letter-spacing:3px; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, dolor unde dolorem dolorum recusandae esse repudiandae? Deserunt laudantium ratione cupiditate quaerat maxime, magni culpa vel vitae omnis nihil, eos repellat cum, eum similique in iste provident iusto? Quod voluptatum quae explicabo doloremque molestias repellat, consectetur cupiditate. In ipsa accusamus corrupti.</p>
