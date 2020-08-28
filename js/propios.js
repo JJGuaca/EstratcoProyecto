@@ -14,13 +14,13 @@ $(document).ready(function(){
 if(titulo == 'Nosotros'){
 	sitio.innerText='Nosotros';
 	$('#link1').attr('href','.');
-	$('#link2').attr('href','nosotros.html');
-	$('#link4').attr('href','educacion.html');
+	$('#link2').attr('href','nosotros.php');
+	$('#link4').attr('href','educacion.php');
 }else if(titulo == 'Educación'){
 	sitio.innerText='Educación';
 	$('#link1').attr('href','.');
-	$('#link2').attr('href','nosotros.html');
-	$('#link4').attr('href','educacion.html');
+	$('#link2').attr('href','nosotros.php');
+	$('#link4').attr('href','educacion.php');
 
 }else{
 	console.log('no igual');
