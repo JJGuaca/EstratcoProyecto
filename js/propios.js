@@ -17,13 +17,16 @@ $(document).ready(function(){
 	var fterjs = new XMLHttpRequest();
 	fterjs.open('GET','./vistas/footer.html',false);
 	fterjs.send();
-	fter.innerHTML=fterjs.responseText;
-
+	fter.innerHTML = fterjs.responseText;
 	var sitio = document.getElementById('SITIO');
 	var titulo = document.getElementById('titulo').innerText; 
 
-if(titulo == 'Nosotros'){
-	sitio.innerText='Nosotros';
+if (titulo == 'Home'){
+	sitio.innerText = 'Inicio';
+
+}else if(titulo == 'Nosotros'){
+
+	sitio.innerText = 'Nosotros';
 	$('#link1').attr('href','.');
 	$('#link2').attr('href','nosotros.html');
 	$('#link4').attr('href','educacion.html');
@@ -36,9 +39,10 @@ if(titulo == 'Nosotros'){
 	var nsec3 = new XMLHttpRequest();
 	nsec3.open('GET','./vistas/jumbtronNosotros.html', false);
 	nsec3.send();
-	sec3.innerHTML=nsec3.responseText;
+	sec3.innerHTML = nsec3.responseText;
 
 }else if(titulo == 'Educación'){
+
 	sitio.innerText='Educación';
 	$('#link1').attr('href','.');
 	$('#link2').attr('href','nosotros.html');
