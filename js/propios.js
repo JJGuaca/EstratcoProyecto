@@ -27,6 +27,16 @@ if(titulo == 'Nosotros'){
 	$('#link1').attr('href','.');
 	$('#link2').attr('href','nosotros.html');
 	$('#link4').attr('href','educacion.html');
+	var sec2 = document.getElementById('secc2');
+	var nsec2 = new XMLHttpRequest();
+	nsec2.open('GET','./vistas/categorias.html',false);
+	nsec2.send();
+	sec2.innerHTML=nsec2.responseText;
+	var sec3 = document.getElementById('secc3');
+	var nsec3 = new XMLHttpRequest();
+	nsec3.open('GET','./vistas/jumbtronNosotros.html', false);
+	nsec3.send();
+	sec3.innerHTML=nsec3.responseText;
 
 }else if(titulo == 'Educación'){
 	sitio.innerText='Educación';

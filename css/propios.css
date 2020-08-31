@@ -16,6 +16,28 @@
 .colorAgua{
 	color: #66e4f2;
 }
+.colorAguaFiltro{
+    filter: contrast(0%) sepia(1) hue-rotate(-230deg) saturate(350%);
+}
+.fuenteSpan{
+    letter-spacing: 5px;
+    font-family: 'Poppins-Medium';
+    font-size: 85%;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.colorGris{
+    color: #515455;
+}
+.col-lg-4>a{
+    color: unset;
+    text-decoration: unset;
+}
+.container-fluid {
+    width: 100%;
+    padding: 0px 15px;
+}
 
 .imagenCircular{
     border-radius: 100%;
