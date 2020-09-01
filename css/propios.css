@@ -210,6 +210,17 @@ div>p{
 .jumbotron {
     margin-bottom: 0rem;
 }
+.carousel-caption1{
+    position: absolute;
+    right: 19%;
+    bottom: -34px;
+    left: -127%;
+    z-index: 10;
+    padding-top: 0;
+    padding-bottom: 0px;
+    color: #fff;
+    text-align: center;
+}
 
 
 

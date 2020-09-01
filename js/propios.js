@@ -62,6 +62,34 @@ if (titulo == 'Home'){
 	$('#link2').attr('href','nosotros.html');
 	$('#link4').attr('href','educacion.html');
 
+	/*SECCION 3*/
+	var sec3 = document.getElementById('secc3');
+	var nsec3 = new XMLHttpRequest();
+	nsec3.open('GET','./vistas/cursos.html', false);
+	nsec3.send();
+	sec3.innerHTML = nsec3.responseText;
+	/*Seccion 3 modulo 1*/
+	var cursosDes = document.getElementById('cursosDes');
+	ncursosDes = new XMLHttpRequest();
+	ncursosDes.open('GET','./modulos/cursosdes.html', false);
+	ncursosDes.send();
+	cursosDes.innerHTML = ncursosDes.responseText;
+	/*Seccion 3 modulo 2*/
+	var cursosHor = document.getElementById('cursosHor');
+	ncursosHor = new XMLHttpRequest();
+	ncursosHor.open('GET','./modulos/cursosHor.html', false);
+	ncursosHor.send();
+	cursosHor.innerHTML = ncursosHor.responseText;
+
+	/*SECCION 4*/
+	var sec4 = document.getElementById('secc4');
+	var nsec4 = new XMLHttpRequest();
+	nsec4.open('GET','./vistas/redprofesional.html', false);
+	nsec4.send();
+	sec4.innerHTML = nsec4.responseText;
+	var text = document.getElementById('texto');
+	text.innerHTML = '<h5 class="text-muted">Aca es para que los usuarios dejen sus datos para contactar para las inscripciones</h5>';
+
 }else{
 	console.log('no igual');
 	console.log(titulo);
