@@ -65,9 +65,7 @@ if (titulo == 'Home'){
 }else{
 	console.log('no igual');
 	console.log(titulo);
-}
-//console.log(sitio);
-//console.log(titulo);
+	}
 });
 
 function registro(){
