@@ -89,6 +89,17 @@
     font-weight: 700;
     letter-spacing: 10px;
 }
+.marcaAguaRed {
+    font-size: 860%;
+    color: rgba(193, 193, 193, 0.3);
+    position: relative;
+    top: 57px;
+    z-index: 1;
+    margin: 0rem 0rem;
+    padding: 1rem;
+    font-family: 'Poppins-Bold';
+    width: 100%;
+}
 .imgSlider{
 	height: auto;
 	width: 100%;
@@ -360,6 +371,13 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
         
         text-align: center;
     }
+    .marcaAguaRed{
+        display: none;
+    }
+    #Red{
+        top: 30px !important;
+        font-size: 140% !important;
+    }
 }
 
 
@@ -382,6 +400,13 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     }
     .brigt{        
         text-align: center;
+    }
+    .marcaAguaRed{
+        font-size: 300%;
+        top: 1px;
+    }
+    #Red{
+        top:-55px;
     }
 }
 
@@ -411,6 +436,14 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     .brigth{
         border-right:none;
     }
+    .marcaAguaRed {
+        font-size: 345%;
+        letter-spacing: 2px;
+        top: 6px;
+    }
+    #Red{
+        top: -52px;
+    }
 
 }
 @media (min-width: 992px) and (max-width: 1199px){
@@ -428,6 +461,15 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
         font-size: 640%;
         letter-spacing: 11px;
     }
+    .marcaAguaRed {
+        font-size: 445%;
+        letter-spacing: 10px;
+        top: 10px;
+    }
+    #Red{
+        top: -59px;
+    }
+
 }
 @media (min-width: 1200px) and (max-width: 1500px){
     .marcaAgua2 {
@@ -443,5 +485,13 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     .marcaAgua1{
         font-size: 640%;
         letter-spacing: 25px;
+    }
+    .marcaAguaRed {
+        font-size: 625%;
+        letter-spacing: 5px;
+        top: 15px;
+    }
+    #Red{
+        top: -65px;
     }
 }
