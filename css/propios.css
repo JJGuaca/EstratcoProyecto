@@ -350,6 +350,7 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     }
     .btop{
         border-top: none;
+        display: none;
         }
     .brigth{
         border-right:none;
@@ -373,6 +374,7 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     }
     .btop{
         border-top: none;
+        display: none;
         }
     .brigth{
         border-right:none;
@@ -404,6 +406,7 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     }
     .btop{
         border-top: none;
+        display: none;
         }
     .brigth{
         border-right:none;
