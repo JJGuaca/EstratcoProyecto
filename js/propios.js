@@ -40,6 +40,11 @@ if (titulo == 'Home'){
 	nsec3.open('GET','./vistas/jumbtronNosotros.html', false);
 	nsec3.send();
 	sec3.innerHTML = nsec3.responseText;
+	var sec4 = document.getElementById('secc4');
+	var nsec4 = new XMLHttpRequest();
+	nsec4.open('GET','./vistas/nequipo.html', false);
+	nsec4.send();
+	sec4.innerHTML = nsec4.responseText;
 
 }else if(titulo == 'Educación'){
 

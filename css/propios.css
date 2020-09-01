@@ -30,6 +30,12 @@
 .colorGris{
     color: #515455;
 }
+.btop{
+    border-top: solid 5px #28313880;
+}
+.brigth{
+    border-right: solid 5px #28313880;
+}
 .col-lg-4>a{
     color: unset;
     text-decoration: unset;
@@ -58,6 +64,18 @@
     font-family: 'Poppins-Medium';
     width: 100%;
     text-align: center;
+}
+.marcaAgua1{
+    color: rgb(71, 80, 86, 0.5);
+    z-index: 1;
+    font-family: 'Poppins-Bold';
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    font-size: 666%;
+    letter-spacing: 25px;
+    width: 100%;
 }
 .marcaAgua2{
     font-size: 800%;
@@ -321,8 +339,52 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     animation: 1000ms ease 0s normal none infinite Pulse-long;
   }
 
+@media (max-width: 565px){
+    .marcaAgua1{
+        font-size: 270%;
+        letter-spacing: 5px;
+    }
+    #Nuestro{
+        top: -40px !important;
 
-@media (max-width: 991px){
+    }
+    .btop{
+        border-top: none;
+        }
+    .brigth{
+        border-right:none;
+        text-align: center;
+    }
+    .brigt{
+        
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 566px) and (max-width: 673px){
+    .marcaAgua1{
+        font-size: 370%;
+        letter-spacing: 5px;
+    }
+    #Nuestro{
+        top: -45px !important;
+
+    }
+    .btop{
+        border-top: none;
+        }
+    .brigth{
+        border-right:none;
+        text-align: center;
+    }
+    .brigt{        
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 674px) and (max-width: 991px){
     .marcaAgua2 {
         font-size:600%;
         left:55%;
@@ -331,6 +393,20 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
         left: 30%;
         height: 300px;
         width: 300px;
+    }
+    .marcaAgua1{
+        font-size: 400%;
+        letter-spacing: 10px;
+    }
+    #Nuestro{
+        top: -43px !important;
+
+    }
+    .btop{
+        border-top: none;
+        }
+    .brigth{
+        border-right:none;
     }
 
 }
@@ -344,5 +420,25 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
         left: 15%;
         height: 200px;
         width: 200px;
+    }
+    .marcaAgua1{
+        font-size: 640%;
+        letter-spacing: 11px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1500px){
+    .marcaAgua2 {
+        font-size: 700%;
+        left: 0%;
+        letter-spacing: 25px;
+    }
+    .imagenCircular{
+        left: 15%;
+        height: 200px;
+        width: 200px;
+    }
+    .marcaAgua1{
+        font-size: 640%;
+        letter-spacing: 25px;
     }
 }
