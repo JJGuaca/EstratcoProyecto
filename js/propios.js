@@ -77,7 +77,7 @@ function registro(){
 		type : 'POST',
 		data: $('#registro').serialize(),
 		success: function(res){
-			console.log(res);
+			alert(res);
 		}
 	});
 	
