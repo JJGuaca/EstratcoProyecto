@@ -30,6 +30,50 @@
 .colorGris{
     color: #515455;
 }
+.fSemibold{
+    font-family: 'Poppins-SemiBold';
+}
+.fThin{
+    font-family: 'Poppins-Thin';
+}
+.fligth{
+    font-family: 'Poppins-Light';
+}
+.h1Ed{
+    font-family: 'Poppins-SemiBold';
+    letter-spacing: 7px;
+    line-height: 2rem;
+    font-weight: 700;
+    font-size: 120%;
+    width: 85%;
+    padding: 1rem 0rem 0rem 1rem;
+    margin: 0rem 0rem 0rem 2rem !important;
+}
+.h1Ed2{
+    font-size: 150%;
+    letter-spacing: 5px;
+    padding: 1rem 0rem 1rem 0rem;
+    margin: 1rem 0rem 1rem 1rem;
+    font-family: 'Poppins-Medium';
+}
+.h1Ed2Sm{
+    letter-spacing: 5.5px;
+    font-family: 'Poppins-Thin';
+    font-size: 75%;
+}
+.h1Edp{
+    font-family: 'Poppins-Light';
+    color: #b0b0b0;
+    letter-spacing: 10px;
+    font-size: 90%;
+    line-height: 20px;
+}
+.h1EdpSt{
+    font-family: 'Poppins-Light';
+    color: #e5dedef5;
+    letter-spacing: 0px;
+    font-size: 120%;
+}
 .btop{
     border-top: solid 5px #28313880;
 }
@@ -213,8 +257,19 @@ div>p{
 .carousel-caption1{
     position: absolute;
     right: 19%;
-    bottom: -34px;
-    left: -127%;
+    bottom: -11px;
+    left: -120%;
+    z-index: 10;
+    padding-top: 0;
+    padding-bottom: 0px;
+    color: #fff;
+    text-align: center;
+}
+.carousel-caption2 {
+    position: absolute;
+    right: 34%;
+    bottom: -11px;
+    left: -297%;
     z-index: 10;
     padding-top: 0;
     padding-bottom: 0px;
@@ -389,6 +444,12 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
         top: 30px !important;
         font-size: 140% !important;
     }
+    .carousel-caption1{
+        display: none;
+    }
+    .carousel-caption2 {
+        display: none;
+    }
 }
 
 
@@ -418,6 +479,12 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     }
     #Red{
         top:-55px;
+    }
+    .carousel-caption1{
+        display: none;
+    }
+    .carousel-caption2 {
+        display: none;
     }
 }
 
@@ -454,6 +521,12 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     }
     #Red{
         top: -52px;
+    }
+    .carousel-caption1{
+        display: none;
+    }
+    .carousel-caption2 {
+        display: none;
     }
 
 }
