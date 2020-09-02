@@ -62,6 +62,13 @@ if (titulo == 'Home'){
 	$('#link2').attr('href','nosotros.html');
 	$('#link4').attr('href','educacion.html');
 
+	/*SECCION 2*/
+	var sec2 = document.getElementById('secc2');
+	var nsec2 = new XMLHttpRequest();
+	nsec2.open('GET','./vistas/introduccion.html', false);
+	nsec2.send();
+	sec2.innerHTML = nsec2.responseText;
+
 	/*SECCION 3*/
 	var sec3 = document.getElementById('secc3');
 	var nsec3 = new XMLHttpRequest();

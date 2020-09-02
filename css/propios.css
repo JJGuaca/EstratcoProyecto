@@ -450,6 +450,13 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     .carousel-caption2 {
         display: none;
     }
+    #tex1{
+        border:none !important;
+    }
+    #text2{
+        border:none !important;
+    }
+
 }
 
 
@@ -486,6 +493,13 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     .carousel-caption2 {
         display: none;
     }
+    #tex1{
+        border:none !important;
+    }
+    #text2{
+        border:none !important;
+    }
+
 }
 
 
@@ -527,6 +541,12 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     }
     .carousel-caption2 {
         display: none;
+    }
+    #tex1{
+        border:none !important;
+    }
+    #text2{
+        border:none !important;
     }
 
 }
