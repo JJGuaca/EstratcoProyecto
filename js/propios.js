@@ -149,8 +149,7 @@ function registro(){
 	
 
 }
-function registroNews(){
-	
+function registroNews(){	
 	$.ajax({
 		url : './php/datosNews.php',
 		type : 'POST',
@@ -162,3 +161,14 @@ function registroNews(){
 	
 
 }
+
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 100) {
+    $('.navbar').addClass('affix');
+  } else {
+    $('.navbar').removeClass('affix');
+  }
+});
+$(window).scroll(function() {
+	$('.navbar-collapse').removeClass('show');
+});

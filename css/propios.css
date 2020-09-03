@@ -291,6 +291,35 @@ div>p{
     transform: scale(1);
 }
 
+/*------------- Efecto Nav Bar --------------*/
+
+.fade2 {
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition: all .25s linear;
+    -o-transition: all .25s linear;
+    transition: all .5s cubic-bezier(0, 0.94, 0.1, 1.02);
+}
+.show {
+    opacity: 1;
+    transform: scaleY(1);
+}
+.navbar { 
+  -webkit-transition:padding 0.2s ease;
+  -moz-transition:padding 0.2s ease; 
+  -o-transition:padding 0.2s ease;        
+  transition:padding 0.2s ease;  
+}
+
+.affix {
+  padding-top: 0.2em !important;
+  padding-bottom: 0.2em !important;
+  -webkit-transition:padding 0.2s linear;
+  -moz-transition:padding 0.2s linear;  
+  -o-transition:padding 0.2s linear;         
+  transition:padding 0.2s linear;  
+}
+
 /*--------------------slider carrusel logos---------------------*/
 
 .conten {
