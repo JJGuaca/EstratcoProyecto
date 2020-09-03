@@ -10,8 +10,14 @@
 	<link rel="stylesheet" href="css/propios.css">
 	<link rel="stylesheet" href="css/fuentes.css">
 	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	<script type="text/javascript" src="js/smooth-scroll.polyfills.min.js"></script>
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]', {
+			speed: 2000
+		});
+	</script>
 </head>
-<body>
+<body id="body">
 	<div id="nbar" class="sticky-top"></div>
 	<a href="#" class="flotante"><button class="btn-dark bg-dark2" style="border: none;color: #435a69;" id="flotante" onmouseover="scale(this);" onmouseout="scalenot(this);"  data-toggle="modal" data-target="#PopUp"><span style=" letter-spacing: 5px;">newsleter</span></button></a>
 	<div class="modal fade" id="PopUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"></div>
@@ -19,8 +25,7 @@
 	<main role="main">
 
 		<!--SECCION 1-->
-		<div type="hidden" id="secc1"></div>
-		<section id="" class="jumbotron text-center" style="padding-top: 1rem; padding: 0rem 0rem;" >
+		<section id="secc1" class="jumbotron text-center" style="padding-top: 1rem; padding: 0rem 0rem;" >
 			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
@@ -31,8 +36,7 @@
 		</section>
 
 		<!--SECCION 2-->
-		<div type="hidden" id="secc2"></div>
-		<section id="" class="jumbotron" style="padding-top: 1rem; padding: 0rem 0rem;">
+		<section id="secc2" class="jumbotron" style="padding-top: 1rem; padding: 0rem 0rem;">
 			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner row">
 					<div class="carousel-item active col-md-6 offset-1">
@@ -50,8 +54,7 @@
 		</section>
 
 		<!--SECCION 3-->
-		<div type="hidden" id="secc3"></div>
-		<section id="" class="jumbotron bg-light" style="padding: unset; width: 99%;">
+		<section id="secc3" class="jumbotron bg-light" style="padding: unset; width: 99%;">
 			<div class="row ">
 				<div class="col-lg-4 p-0">
 					<div class="card container bg-dark2">

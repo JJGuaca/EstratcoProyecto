@@ -7,6 +7,8 @@ function scalenot(btn){
 	btnAc.style.setProperty('transform','scale(1)');
 }
 
+
+
 $(document).ready(function(){
 	var nbar = document.getElementById('nbar');
 	var nbarjs = new XMLHttpRequest();
@@ -170,5 +172,5 @@ $(window).scroll(function() {
   }
 });
 $(window).scroll(function() {
-	$('.navbar-collapse').removeClass('show');
+		$('.navbar-collapse').removeClass('show');
 });
