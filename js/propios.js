@@ -28,6 +28,11 @@ if (titulo == 'Home'){
 	nPopUp.open('GET','./modulos/popup.html', false);
 	nPopUp.send();
 	PopUp1.innerHTML=nPopUp.responseText;
+	var registropop = document.getElementById('registropop');
+	var nregistropop = new XMLHttpRequest();
+	nregistropop.open('GET','./vistas/registronews.html',false);
+	nregistropop.send();
+	registropop.innerHTML=nregistropop.responseText;
 
 }else if(titulo == 'Nosotros'){
 
@@ -35,6 +40,7 @@ if (titulo == 'Home'){
 	$('#link1').attr('href','.');
 	$('#link2').attr('href','nosotros.html');
 	$('#link4').attr('href','educacion.html');
+	$('#link5').attr('href','agenda.html');
 	/*SECCION 2*/
 	var sec2 = document.getElementById('secc2');
 	var nsec2 = new XMLHttpRequest();
@@ -65,7 +71,9 @@ if (titulo == 'Home'){
 	sitio.innerText='Educación';
 	$('#link1').attr('href','.');
 	$('#link2').attr('href','nosotros.html');
+	$('#link3').attr('href','nosotros.html#secc2');
 	$('#link4').attr('href','educacion.html');
+	$('#link5').attr('href','agenda.html');
 
 	/*SECCION 2*/
 	var sec2 = document.getElementById('secc2');
@@ -106,13 +114,21 @@ if (titulo == 'Home'){
 	sitio.innerText='Educación';
 	$('#link1').attr('href','.');
 	$('#link2').attr('href','nosotros.html');
+	$('#link3').attr('href','nosotros.html#secc2');
 	$('#link4').attr('href','educacion.html');
+	$('#link5').attr('href','#');
 
 	var PopUp1 = document.getElementById('PopUp');
 	var nPopUp = new XMLHttpRequest();
 	nPopUp.open('GET','./modulos/popup.html', false);
 	nPopUp.send();
 	PopUp1.innerHTML=nPopUp.responseText;
+
+	var registropop = document.getElementById('registropop');
+	var nregistropop = new XMLHttpRequest();
+	nregistropop.open('GET','./vistas/registronews.html',false);
+	nregistropop.send();
+	registropop.innerHTML=nregistropop.responseText;
 
 }else{
 	console.log('no igual');
@@ -124,6 +140,19 @@ function registro(){
 	
 	$.ajax({
 		url : './php/datos.php',
+		type : 'POST',
+		data: $('#registro').serialize(),
+		success: function(res){
+			alert(res);
+		}
+	});
+	
+
+}
+function registroNews(){
+	
+	$.ajax({
+		url : './php/datosNews.php',
 		type : 'POST',
 		data: $('#registro').serialize(),
 		success: function(res){
