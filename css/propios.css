@@ -276,8 +276,20 @@ div>p{
     color: #fff;
     text-align: center;
 }
+/*--------------------- POPUP MODAL----------------------------*/
 
+.fade {
+     transform: scale(0);
+     opacity: 0;
+     -webkit-transition: all .25s linear;
+     -o-transition: all .25s linear;
+     transition: all .3s linear;
+}
 
+.show {
+    opacity: 1;
+    transform: scale(1);
+}
 
 /*--------------------slider carrusel logos---------------------*/
 
