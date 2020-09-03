@@ -23,6 +23,11 @@ $(document).ready(function(){
 
 if (titulo == 'Home'){
 	sitio.innerText = 'Inicio';
+	var PopUp1 = document.getElementById('PopUp');
+	var nPopUp = new XMLHttpRequest();
+	nPopUp.open('GET','./modulos/popup.html', false);
+	nPopUp.send();
+	PopUp1.innerHTML=nPopUp.responseText;
 
 }else if(titulo == 'Nosotros'){
 
@@ -96,6 +101,18 @@ if (titulo == 'Home'){
 	sec4.innerHTML = nsec4.responseText;
 	var text = document.getElementById('texto');
 	text.innerHTML = '<h5 class="text-muted">Aca es para que los usuarios dejen sus datos para contactar para las inscripciones</h5>';
+
+}else if(titulo == 'Agenda'){
+	sitio.innerText='Educación';
+	$('#link1').attr('href','.');
+	$('#link2').attr('href','nosotros.html');
+	$('#link4').attr('href','educacion.html');
+
+	var PopUp1 = document.getElementById('PopUp');
+	var nPopUp = new XMLHttpRequest();
+	nPopUp.open('GET','./modulos/popup.html', false);
+	nPopUp.send();
+	PopUp1.innerHTML=nPopUp.responseText;
 
 }else{
 	console.log('no igual');
