@@ -1,11 +1,11 @@
 var alto =screen.height;
 	alto = alto/2;
 	$("html,body").animate({
-		scrollTop:alto
+		scrollTop:280
 	},800);
-	// $("html,body").animate({
-	// 	scrollTop:0
-	// },2);
+	 $("html,body").animate({
+	 	scrollTop:0
+	 },800);
 
 function scale(btn){
 	var btnAc = document.getElementById(btn.id);
@@ -57,7 +57,7 @@ if (titulo == 'Home'){
 		} else {
 			$('#secc3').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 900) {
+		if ($(document).scrollTop() > 600) {
 			$('#secc4').removeClass('hidden');
 			$('#secc4').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
