@@ -1,11 +1,11 @@
 var alto =screen.height;
 	alto = alto/2;
 	$("html,body").animate({
-		scrollTop:280
-	},800);
+		scrollTop:100
+	},1000);
 	 $("html,body").animate({
 	 	scrollTop:0
-	 },800);
+	 },1000);
 
 function scale(btn){
 	var btnAc = document.getElementById(btn.id);
@@ -44,8 +44,10 @@ if (titulo == 'Home'){
 	nregistropop.open('GET','./vistas/registronews.html',false);
 	nregistropop.send();
 	registropop.innerHTML=nregistropop.responseText;
+	
+
 	$(window).scroll(function() {
-		if ($(document).scrollTop() > 200) {
+		if ($(document).scrollTop() > 0) {
 		 	$('#secc2').removeClass('hidden');
 		 	$('#secc2').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
@@ -63,13 +65,13 @@ if (titulo == 'Home'){
 		} else {
 			$('#secc4').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 1500) {
+		if ($(document).scrollTop() > 1400) {
 			$('#secc5').removeClass('hidden');
 			$('#secc5').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#secc5').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() >1800) {
+		if ($(document).scrollTop() >2100) {
 			$('#fter').removeClass('hidden');
 			$('#fter').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
@@ -108,26 +110,27 @@ if (titulo == 'Home'){
 	nsec5.open('GET','./vistas/redprofesional.html', false);
 	nsec5.send();
 	sec5.innerHTML = nsec5.responseText;
+	$('#aplog').addClass('hidden');
 	$(window).scroll(function() {
-		if ($(document).scrollTop() > 100) {
-		 	$('#body').removeClass('minHeig');
+		if ($(document).scrollTop() > 0) {
 		 	$('#secc2').removeClass('hidden');
 		 	$('#secc2').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 		 	$('#secc2').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 400) {
+		if ($(document).scrollTop() > 500) {
 			$('#secc3').removeClass('hidden');
+			$('#aplog').removeClass('hidden');
 			$('#aplog').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#aplog').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 800) {
+		if ($(document).scrollTop() > 900) {
 			$('#tecInfo').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#tecInfo').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 1300) {
+		if ($(document).scrollTop() > 1400) {
 			$('#aseCon').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#aseCon').removeClass('animate__animated animate__fadeInUp animate__slow');
@@ -140,7 +143,7 @@ if (titulo == 'Home'){
 			$('#secc4').removeClass('animate__animated animate__fadeInUp animate__slow');
 			$('.col-lg-6').removeClass('animate__animated nimate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 3000) {
+		if ($(document).scrollTop() > 3400) {
 			$('#secc5').removeClass('hidden');
 			$('#secc5').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
@@ -206,19 +209,19 @@ if (titulo == 'Home'){
 		} else {
 		 	$('#secc2').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 300) {
+		if ($(document).scrollTop() > 400) {
 			$('#secc3').removeClass('hidden');
 			$('#secc3').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#secc3').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 600) {
+		if ($(document).scrollTop() > 1100) {
 			$('#secc4').removeClass('hidden');
 			$('#secc4').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#secc4').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 900) {
+		if ($(document).scrollTop() > 1400) {
 			$('#fter').removeClass('hidden');
 			$('#fter').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
