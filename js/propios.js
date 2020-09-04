@@ -1,7 +1,3 @@
-$("html, body").animate({
-    scrollTop: 290
-}, 2000);
-
 function scale(btn){
 	var btnAc = document.getElementById(btn.id);
 	btnAc.style.setProperty('transform','scale(1.1)'); 
@@ -28,6 +24,7 @@ $(document).ready(function(){
 	var titulo = document.getElementById('titulo').innerText; 
 
 if (titulo == 'Home'){
+	$('#body').addClass('minHeig');
 	sitio.innerText = 'Inicio';
 	var PopUp1 = document.getElementById('PopUp');
 	var nPopUp = new XMLHttpRequest();
@@ -39,6 +36,39 @@ if (titulo == 'Home'){
 	nregistropop.open('GET','./vistas/registronews.html',false);
 	nregistropop.send();
 	registropop.innerHTML=nregistropop.responseText;
+	$(window).scroll(function() {
+		 if ($(document).scrollTop() > 100) {
+		 	$('#body').removeClass('minHeig');
+		 	$('#secc2').removeClass('hidden');
+		 	$('#secc2').addClass('animate__animated animate__fadeInUp animate__slow');
+		 } else {
+		 	$('#secc2').removeClass('animate__animated animate__fadeInUp animate__slow');
+		 }
+		if ($(document).scrollTop() > 350) {
+			$('#secc3').removeClass('hidden');
+			$('#secc3').addClass('animate__animated animate__fadeInUp animate__slow');
+		} else {
+			$('#secc3').removeClass('animate__animated animate__fadeInUp animate__slow');
+		}
+		if ($(document).scrollTop() > 600) {
+			$('#secc4').removeClass('hidden');
+			$('#secc4').addClass('animate__animated animate__fadeInUp animate__slow');
+		} else {
+			$('#secc4').removeClass('animate__animated animate__fadeInUp animate__slow');
+		}
+		if ($(document).scrollTop() > 1400) {
+			$('#secc5').removeClass('hidden');
+			$('#secc5').addClass('animate__animated animate__fadeInUp animate__slow');
+		} else {
+			$('#secc5').removeClass('animate__animated animate__fadeInUp animate__slow');
+		}
+		if ($(document).scrollTop() > 2100) {
+			$('#fter').removeClass('hidden');
+			$('#fter').addClass('animate__animated animate__fadeInUp animate__slow');
+		} else {
+			$('#fter').removeClass('animate__animated animate__fadeInUp animate__slow');
+		}
+	});
 
 }else if(titulo == 'Nosotros'){
 
@@ -71,6 +101,51 @@ if (titulo == 'Home'){
 	nsec5.open('GET','./vistas/redprofesional.html', false);
 	nsec5.send();
 	sec5.innerHTML = nsec5.responseText;
+	$(window).scroll(function() {
+		 if ($(document).scrollTop() > 100) {
+		 	$('#body').removeClass('minHeig');
+		 	$('#secc2').removeClass('hidden');
+		 	$('#secc2').addClass('animate__animated animate__fadeInUp animate__slow');
+		 } else {
+		 	$('#secc2').removeClass('animate__animated animate__fadeInUp animate__slow');
+		 }
+		if ($(document).scrollTop() > 400) {
+			$('#secc3').removeClass('hidden');
+			$('#aplog').addClass('animate__animated animate__fadeInUp animate__slow');
+		} else {
+			$('#aplog').removeClass('animate__animated animate__fadeInUp animate__slow');
+		}
+		if ($(document).scrollTop() > 800) {
+			$('#tecInfo').addClass('animate__animated animate__fadeInUp animate__slow');
+		} else {
+			$('#tecInfo').removeClass('animate__animated animate__fadeInUp animate__slow');
+		}
+		if ($(document).scrollTop() > 1300) {
+			$('#aseCon').addClass('animate__animated animate__fadeInUp animate__slow');
+		} else {
+			$('#aseCon').removeClass('animate__animated animate__fadeInUp animate__slow');
+		}
+		if ($(document).scrollTop() > 1900) {
+			$('#secc4').removeClass('hidden');
+			$('#secc4').addClass('animate__animated animate__fadeInUp animate__slow');
+			$('.col-lg-6').addClass('animate__animated animate__fadeInRight animate__slow');
+		} else {
+			$('#secc4').removeClass('animate__animated animate__fadeInUp animate__slow');
+			$('.col-lg-6').removeClass('animate__animated animate__fadeInRight animate__slow');
+		}
+		if ($(document).scrollTop() > 3000) {
+			$('#secc5').removeClass('hidden');
+			$('#secc5').addClass('animate__animated animate__fadeInUp animate__slow');
+		} else {
+			$('#secc5').removeClass('animate__animated animate__fadeInUp animate__slow');
+		}
+		if ($(document).scrollTop() > 3600) {
+			$('#fter').removeClass('hidden');
+			$('#fter').addClass('animate__animated animate__fadeInUp animate__slow');
+		} else {
+			$('#fter').removeClass('animate__animated animate__fadeInUp animate__slow');
+		}
+	});
 
 }else if(titulo == 'Educación'){
 
@@ -115,6 +190,34 @@ if (titulo == 'Home'){
 	sec4.innerHTML = nsec4.responseText;
 	var text = document.getElementById('texto');
 	text.innerHTML = '<h5 class="text-muted">Aca es para que los usuarios dejen sus datos para contactar para las inscripciones</h5>';
+
+	$(window).scroll(function() {
+		 if ($(document).scrollTop() > 100) {
+		 	$('#body').removeClass('minHeig');
+		 	$('#secc2').removeClass('hidden');
+		 	$('#secc2').addClass('animate__animated animate__fadeInUp animate__slow');
+		 } else {
+		 	$('#secc2').removeClass('animate__animated animate__fadeInUp animate__slow');
+		 }
+		if ($(document).scrollTop() > 300) {
+			$('#secc3').removeClass('hidden');
+			$('#secc3').addClass('animate__animated animate__fadeInUp animate__slow');
+		} else {
+			$('#secc3').removeClass('animate__animated animate__fadeInUp animate__slow');
+		}
+		if ($(document).scrollTop() > 600) {
+			$('#secc4').removeClass('hidden');
+			$('#secc4').addClass('animate__animated animate__fadeInUp animate__slow');
+		} else {
+			$('#secc4').removeClass('animate__animated animate__fadeInUp animate__slow');
+		}
+		if ($(document).scrollTop() > 900) {
+			$('#fter').removeClass('hidden');
+			$('#fter').addClass('animate__animated animate__fadeInUp animate__slow');
+		} else {
+			$('#fter').removeClass('animate__animated animate__fadeInUp animate__slow');
+		}
+	});
 
 }else if(titulo == 'Agenda'){
 	sitio.innerText='Educación';
@@ -165,6 +268,16 @@ function registroNews(){
 		}
 	});
 	
+
+}
+function remover(dir){
+	var href = dir.href;
+	var res = href.substr(-6, 6);
+	if(res == 'gistro'){
+		$('#secc5').removeClass('hidden');
+	}
+	console.log(res);
+	$(res).removeClass('hidden');
 
 }
 

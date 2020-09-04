@@ -1,3 +1,14 @@
+/*----- funcion de animacion---*/
+
+.hidden{
+    display: none;
+}
+.minHeig{
+    height: 150vh;
+}
+
+/*---------ajustes generales---------*/
+
 .bg-dark1{
 	background-color: #475056;
 }
