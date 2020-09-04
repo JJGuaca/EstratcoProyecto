@@ -3,9 +3,6 @@
 .hidden{
     display: none;
 }
-.minHeig{
-    height: 1000rem;
-}
 
 /*---------ajustes generales---------*/
 
@@ -468,7 +465,7 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     animation: 1000ms ease 0s normal none infinite Pulse-long;
   }
 
-@media (max-width: 565px){
+@media (max-width: 499px){
     .marcaAgua1{
         font-size: 270%;
         letter-spacing: 5px;
@@ -508,8 +505,8 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     #text2{
         border:none !important;
     }
-    .minHeig{
-    height: 5000px;
+    .minHeig {
+     height: 500rem;
     }
 
 }
@@ -554,8 +551,8 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     #text2{
         border:none !important;
     }
-    .minHeig{
-    height: 3000px;
+    .minHeig {
+     height: calc(100% - 1%);
     }
 
 
@@ -607,9 +604,7 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     #text2{
         border:none !important;
     }
-    .minHeig{
-    height: 2000px;
-    }
+    
 
 
 }
@@ -636,9 +631,7 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     #Red{
         top: -59px;
     }
-    .minHeig{
-    height: 1000px;
-    }
+   
 
 
 }

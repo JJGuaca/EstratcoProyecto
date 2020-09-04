@@ -1,4 +1,12 @@
-$('html, body').animate({scrollTop:300},800);
+var alto =screen.height;
+$("html,body").animate({
+		scrollTop:alto
+	},2000);
+	//alto = alto/2; 
+	console.log(alto);
+	
+$('body').css('height',alto);
+
 function scale(btn){
 	var btnAc = document.getElementById(btn.id);
 	btnAc.style.setProperty('transform','scale(1.1)'); 
@@ -25,7 +33,6 @@ $(document).ready(function(){
 	var titulo = document.getElementById('titulo').innerText; 
 
 if (titulo == 'Home'){
-	$('#body').addClass('minHeig');
 	sitio.innerText = 'Inicio';
 	var PopUp1 = document.getElementById('PopUp');
 	var nPopUp = new XMLHttpRequest();
@@ -38,20 +45,20 @@ if (titulo == 'Home'){
 	nregistropop.send();
 	registropop.innerHTML=nregistropop.responseText;
 	$(window).scroll(function() {
-		if ($(document).scrollTop() > 50) {
-		 	$('#body').removeClass('minHeig');
+		if ($(document).scrollTop() > 10) {
+		 	//$('#body').removeClass('minHeig');
 		 	$('#secc2').removeClass('hidden');
 		 	$('#secc2').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 		 	$('#secc2').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 150) {
+		if ($(document).scrollTop() > 100) {
 			$('#secc3').removeClass('hidden');
 			$('#secc3').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#secc3').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 500) {
+		if ($(document).scrollTop() > 800) {
 			$('#secc4').removeClass('hidden');
 			$('#secc4').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
