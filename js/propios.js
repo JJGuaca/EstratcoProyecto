@@ -1,3 +1,7 @@
+$("html, body").animate({
+    scrollTop: 290
+}, 2000);
+
 function scale(btn){
 	var btnAc = document.getElementById(btn.id);
 	btnAc.style.setProperty('transform','scale(1.1)'); 
