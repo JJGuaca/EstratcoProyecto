@@ -1,3 +1,4 @@
+$('html, body').animate({scrollTop:150},800);
 function scale(btn){
 	var btnAc = document.getElementById(btn.id);
 	btnAc.style.setProperty('transform','scale(1.1)'); 
@@ -44,25 +45,25 @@ if (titulo == 'Home'){
 		 } else {
 		 	$('#secc2').removeClass('animate__animated animate__fadeInUp animate__slow');
 		 }
-		if ($(document).scrollTop() > 350) {
+		if ($(document).scrollTop() > 280) {
 			$('#secc3').removeClass('hidden');
 			$('#secc3').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#secc3').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 600) {
+		if ($(document).scrollTop() > 450) {
 			$('#secc4').removeClass('hidden');
 			$('#secc4').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#secc4').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 1400) {
+		if ($(document).scrollTop() > 1000) {
 			$('#secc5').removeClass('hidden');
 			$('#secc5').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#secc5').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 2100) {
+		if ($(document).scrollTop() > 2000) {
 			$('#fter').removeClass('hidden');
 			$('#fter').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
