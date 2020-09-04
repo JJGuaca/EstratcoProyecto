@@ -1,4 +1,11 @@
-//$('body').css('height',alto);
+var alto =screen.height;
+	alto = alto*5;
+	$("html,body").animate({
+		scrollTop:alto
+	},800);
+	$("html,body").animate({
+		scrollTop:0
+	},800);
 
 function scale(btn){
 	var btnAc = document.getElementById(btn.id);
@@ -12,18 +19,6 @@ function scalenot(btn){
 
 
 $(document).ready(function(){
-	var alto =screen.height;
-	alto = alto*5;
-	$("html,body").animate({
-		scrollTop:alto
-	},800);
-	var medio = alto/2;
-	$("html,body").animate({
-		scrollTop:medio
-	},800);
-	//alto = alto/2; 
-	console.log(alto);
-	console.log(medio);
 	var nbar = document.getElementById('nbar');
 	var nbarjs = new XMLHttpRequest();
 	nbarjs.open('GET','./vistas/navbar.html',false);
@@ -51,32 +46,31 @@ if (titulo == 'Home'){
 	registropop.innerHTML=nregistropop.responseText;
 	$(window).scroll(function() {
 		var alto = screen.height;
-		console.log(alto-100);
-		if ($(document).scrollTop() > alto-(alto+10)) {
+		if ($(document).scrollTop() > 10) {
 		 	$('#secc2').removeClass('hidden');
 		 	$('#secc2').addClass('animate__animated animate__fadeInUp animate__slow');
-		} else {
-		 	$('#secc2').removeClass('animate__animated animate__fadeInUp animate__slow');
-		}
-		if ($(document).scrollTop() > alto-200) {
+		} //else {
+		 	//$('#secc2').removeClass('animate__animated animate__fadeInUp animate__slow');
+		//}
+		if ($(document).scrollTop() > 100) {
 			$('#secc3').removeClass('hidden');
 			$('#secc3').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#secc3').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > alto-300) {
+		if ($(document).scrollTop() > 500) {
 			$('#secc4').removeClass('hidden');
 			$('#secc4').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#secc4').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > alto-500) {
+		if ($(document).scrollTop() > 800) {
 			$('#secc5').removeClass('hidden');
 			$('#secc5').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#secc5').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > alto-1000) {
+		if ($(document).scrollTop() >1000) {
 			$('#fter').removeClass('hidden');
 			$('#fter').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {

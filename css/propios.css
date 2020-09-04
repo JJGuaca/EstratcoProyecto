@@ -3,6 +3,9 @@
 .hidden{
     display: none;
 }
+.minHeig{
+    height: 200vh;
+}
 
 /*---------ajustes generales---------*/
 
