@@ -1,4 +1,5 @@
 var alto =screen.height;
+alto = alto+100;
 $("html,body").animate({
 		scrollTop:alto
 	},2000);
@@ -46,7 +47,6 @@ if (titulo == 'Home'){
 	registropop.innerHTML=nregistropop.responseText;
 	$(window).scroll(function() {
 		if ($(document).scrollTop() > 10) {
-		 	//$('#body').removeClass('minHeig');
 		 	$('#secc2').removeClass('hidden');
 		 	$('#secc2').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
@@ -58,7 +58,7 @@ if (titulo == 'Home'){
 		} else {
 			$('#secc3').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 800) {
+		if ($(document).scrollTop() > 500) {
 			$('#secc4').removeClass('hidden');
 			$('#secc4').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
