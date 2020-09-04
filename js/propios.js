@@ -1,4 +1,4 @@
-$('html, body').animate({scrollTop:150},800);
+$('html, body').animate({scrollTop:300},800);
 function scale(btn){
 	var btnAc = document.getElementById(btn.id);
 	btnAc.style.setProperty('transform','scale(1.1)'); 
@@ -51,7 +51,7 @@ if (titulo == 'Home'){
 		} else {
 			$('#secc3').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 450) {
+		if ($(document).scrollTop() > 500) {
 			$('#secc4').removeClass('hidden');
 			$('#secc4').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
