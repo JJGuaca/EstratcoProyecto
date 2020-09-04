@@ -508,6 +508,9 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     #text2{
         border:none !important;
     }
+    .minHeig{
+    height: 5000px;
+    }
 
 }
 
@@ -551,6 +554,10 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     #text2{
         border:none !important;
     }
+    .minHeig{
+    height: 3000px;
+    }
+
 
 }
 
@@ -600,6 +607,10 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     #text2{
         border:none !important;
     }
+    .minHeig{
+    height: 2000px;
+    }
+
 
 }
 @media (min-width: 992px) and (max-width: 1199px){
@@ -625,6 +636,10 @@ _:-ms-fullscreen, :root .slider1::before,.slider1::after {
     #Red{
         top: -59px;
     }
+    .minHeig{
+    height: 1000px;
+    }
+
 
 }
 @media (min-width: 1200px) and (max-width: 1500px){
