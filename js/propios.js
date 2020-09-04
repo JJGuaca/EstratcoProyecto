@@ -37,7 +37,7 @@ if (titulo == 'Home'){
 	nregistropop.send();
 	registropop.innerHTML=nregistropop.responseText;
 	$(window).scroll(function() {
-		 if ($(document).scrollTop() > 100) {
+		 if ($(document).scrollTop() > 50) {
 		 	$('#body').removeClass('minHeig');
 		 	$('#secc2').removeClass('hidden');
 		 	$('#secc2').addClass('animate__animated animate__fadeInUp animate__slow');
@@ -128,10 +128,10 @@ if (titulo == 'Home'){
 		if ($(document).scrollTop() > 1900) {
 			$('#secc4').removeClass('hidden');
 			$('#secc4').addClass('animate__animated animate__fadeInUp animate__slow');
-			$('.col-lg-6').addClass('animate__animated animate__fadeInRight animate__slow');
+			$('.col-lg-6').addClass('animate__animated nimate__fadeInUp animate__slow');
 		} else {
 			$('#secc4').removeClass('animate__animated animate__fadeInUp animate__slow');
-			$('.col-lg-6').removeClass('animate__animated animate__fadeInRight animate__slow');
+			$('.col-lg-6').removeClass('animate__animated nimate__fadeInUp animate__slow');
 		}
 		if ($(document).scrollTop() > 3000) {
 			$('#secc5').removeClass('hidden');
