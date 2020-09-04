@@ -1,12 +1,4 @@
-var alto =screen.height;
-alto = alto+100;
-$("html,body").animate({
-		scrollTop:alto
-	},2000);
-	//alto = alto/2; 
-	console.log(alto);
-	
-$('body').css('height',alto);
+//$('body').css('height',alto);
 
 function scale(btn){
 	var btnAc = document.getElementById(btn.id);
@@ -20,6 +12,18 @@ function scalenot(btn){
 
 
 $(document).ready(function(){
+	var alto =screen.height;
+	alto = alto*5;
+	$("html,body").animate({
+		scrollTop:alto
+	},800);
+	var medio = alto/2;
+	$("html,body").animate({
+		scrollTop:medio
+	},800);
+	//alto = alto/2; 
+	console.log(alto);
+	console.log(medio);
 	var nbar = document.getElementById('nbar');
 	var nbarjs = new XMLHttpRequest();
 	nbarjs.open('GET','./vistas/navbar.html',false);
@@ -46,31 +50,33 @@ if (titulo == 'Home'){
 	nregistropop.send();
 	registropop.innerHTML=nregistropop.responseText;
 	$(window).scroll(function() {
-		if ($(document).scrollTop() > 10) {
+		var alto = screen.height;
+		console.log(alto-100);
+		if ($(document).scrollTop() > alto-(alto+10)) {
 		 	$('#secc2').removeClass('hidden');
 		 	$('#secc2').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 		 	$('#secc2').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 100) {
+		if ($(document).scrollTop() > alto-200) {
 			$('#secc3').removeClass('hidden');
 			$('#secc3').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#secc3').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 500) {
+		if ($(document).scrollTop() > alto-300) {
 			$('#secc4').removeClass('hidden');
 			$('#secc4').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#secc4').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 1000) {
+		if ($(document).scrollTop() > alto-500) {
 			$('#secc5').removeClass('hidden');
 			$('#secc5').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#secc5').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 2000) {
+		if ($(document).scrollTop() > alto-1000) {
 			$('#fter').removeClass('hidden');
 			$('#fter').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
