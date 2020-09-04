@@ -38,14 +38,14 @@ if (titulo == 'Home'){
 	nregistropop.send();
 	registropop.innerHTML=nregistropop.responseText;
 	$(window).scroll(function() {
-		if ($(document).scrollTop() > 50) {
+		if ($(document).scrollTop() > 100) {
 		 	$('#body').removeClass('minHeig');
 		 	$('#secc2').removeClass('hidden');
 		 	$('#secc2').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 		 	$('#secc2').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 280) {
+		if ($(document).scrollTop() > 200) {
 			$('#secc3').removeClass('hidden');
 			$('#secc3').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
