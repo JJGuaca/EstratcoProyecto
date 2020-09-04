@@ -38,13 +38,13 @@ if (titulo == 'Home'){
 	nregistropop.send();
 	registropop.innerHTML=nregistropop.responseText;
 	$(window).scroll(function() {
-		 if ($(document).scrollTop() > 50) {
+		if ($(document).scrollTop() > 50) {
 		 	$('#body').removeClass('minHeig');
 		 	$('#secc2').removeClass('hidden');
 		 	$('#secc2').addClass('animate__animated animate__fadeInUp animate__slow');
-		 } else {
+		} else {
 		 	$('#secc2').removeClass('animate__animated animate__fadeInUp animate__slow');
-		 }
+		}
 		if ($(document).scrollTop() > 280) {
 			$('#secc3').removeClass('hidden');
 			$('#secc3').addClass('animate__animated animate__fadeInUp animate__slow');
@@ -103,13 +103,13 @@ if (titulo == 'Home'){
 	nsec5.send();
 	sec5.innerHTML = nsec5.responseText;
 	$(window).scroll(function() {
-		 if ($(document).scrollTop() > 100) {
+		if ($(document).scrollTop() > 100) {
 		 	$('#body').removeClass('minHeig');
 		 	$('#secc2').removeClass('hidden');
 		 	$('#secc2').addClass('animate__animated animate__fadeInUp animate__slow');
-		 } else {
+		} else {
 		 	$('#secc2').removeClass('animate__animated animate__fadeInUp animate__slow');
-		 }
+		}
 		if ($(document).scrollTop() > 400) {
 			$('#secc3').removeClass('hidden');
 			$('#aplog').addClass('animate__animated animate__fadeInUp animate__slow');
@@ -193,13 +193,13 @@ if (titulo == 'Home'){
 	text.innerHTML = '<h5 class="text-muted">Aca es para que los usuarios dejen sus datos para contactar para las inscripciones</h5>';
 
 	$(window).scroll(function() {
-		 if ($(document).scrollTop() > 100) {
+		if ($(document).scrollTop() > 100) {
 		 	$('#body').removeClass('minHeig');
 		 	$('#secc2').removeClass('hidden');
 		 	$('#secc2').addClass('animate__animated animate__fadeInUp animate__slow');
-		 } else {
+		} else {
 		 	$('#secc2').removeClass('animate__animated animate__fadeInUp animate__slow');
-		 }
+		}
 		if ($(document).scrollTop() > 300) {
 			$('#secc3').removeClass('hidden');
 			$('#secc3').addClass('animate__animated animate__fadeInUp animate__slow');
@@ -277,7 +277,9 @@ function remover(dir){
 	if(res == 'gistro'){
 		$('#secc5').removeClass('hidden');
 	}
-	console.log(res);
+	if(res == '#aplog' || 'ecInfo' || 'aseCon'){
+		$('#secc3').removeClass('hidden');
+	}
 	$(res).removeClass('hidden');
 
 }
