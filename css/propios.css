@@ -156,8 +156,9 @@
     width: 100%;
 }
 .imgSlider{
-	height: auto;
-	width: 100%;
+	height: 85vh;
+    width: 100%;
+}
 }
 .nosotros{
 	width: 100%;

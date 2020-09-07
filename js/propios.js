@@ -44,6 +44,13 @@ if (titulo == 'Home'){
 	nregistropop.open('GET','./vistas/registronews.html',false);
 	nregistropop.send();
 	registropop.innerHTML=nregistropop.responseText;
+
+	/*SECC1*/
+	var sec1 = document.getElementById('secc1');
+	var nsec1 = new XMLHttpRequest();
+	nsec1.open('GET','./vistas/slider.html',false);
+	nsec1.send();
+	sec1.innerHTML=nsec1.responseText;
 	
 
 	$(window).scroll(function() {
@@ -86,6 +93,12 @@ if (titulo == 'Home'){
 	$('#link2').attr('href','nosotros.html');
 	$('#link4').attr('href','educacion.html');
 	$('#link5').attr('href','agenda.html');
+	/*SECCION 1*/
+	var sec1 = document.getElementById('secc1');
+	var nsec1 = new XMLHttpRequest();
+	nsec1.open('GET','./vistas/slider2.html',false);
+	nsec1.send();
+	sec1.innerHTML=nsec1.responseText;
 	/*SECCION 2*/
 	var sec2 = document.getElementById('secc2');
 	var nsec2 = new XMLHttpRequest();
@@ -166,6 +179,13 @@ if (titulo == 'Home'){
 	$('#link4').attr('href','educacion.html');
 	$('#link5').attr('href','agenda.html');
 
+	/*SECCION 1*/
+	var sec1 = document.getElementById('secc1');
+	var nsec1 = new XMLHttpRequest();
+	nsec1.open('GET','./vistas/slider.html',false);
+	nsec1.send();
+	sec1.innerHTML=nsec1.responseText;
+
 	/*SECCION 2*/
 	var sec2 = document.getElementById('secc2');
 	var nsec2 = new XMLHttpRequest();
@@ -236,6 +256,13 @@ if (titulo == 'Home'){
 	$('#link3').attr('href','nosotros.html#secc2');
 	$('#link4').attr('href','educacion.html');
 	$('#link5').attr('href','#');
+
+	/*SECCION 1*/
+	var sec1 = document.getElementById('secc1');
+	var nsec1 = new XMLHttpRequest();
+	nsec1.open('GET','./vistas/slider2.html',false);
+	nsec1.send();
+	sec1.innerHTML=nsec1.responseText;
 
 	var PopUp1 = document.getElementById('PopUp');
 	var nPopUp = new XMLHttpRequest();
