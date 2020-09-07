@@ -93,6 +93,7 @@ if (titulo == 'Home'){
 	$('#link2').attr('href','nosotros.html');
 	$('#link4').attr('href','educacion.html');
 	$('#link5').attr('href','agenda.html');
+	$('#link6').attr('href','noticias.html');
 	/*SECCION 1*/
 	var sec1 = document.getElementById('secc1');
 	var nsec1 = new XMLHttpRequest();
@@ -176,8 +177,9 @@ if (titulo == 'Home'){
 	$('#link1').attr('href','.');
 	$('#link2').attr('href','nosotros.html');
 	$('#link3').attr('href','nosotros.html#secc2');
-	$('#link4').attr('href','educacion.html');
+	$('#link4').attr('href','#');
 	$('#link5').attr('href','agenda.html');
+	$('#link6').attr('href','noticias.html');
 
 	/*SECCION 1*/
 	var sec1 = document.getElementById('secc1');
@@ -256,6 +258,7 @@ if (titulo == 'Home'){
 	$('#link3').attr('href','nosotros.html#secc2');
 	$('#link4').attr('href','educacion.html');
 	$('#link5').attr('href','#');
+	$('#link6').attr('href','noticias.html');
 
 	/*SECCION 1*/
 	var sec1 = document.getElementById('secc1');
@@ -276,6 +279,40 @@ if (titulo == 'Home'){
 	nregistropop.send();
 	registropop.innerHTML=nregistropop.responseText;
 
+}else if(titulo == 'Noticias'){
+	sitio.innerText = 'Noticias';
+	$('#link1').attr('href','.');
+	$('#link2').attr('href','nosotros.html');
+	$('#link3').attr('href','nosotros.html#secc2');
+	$('#link4').attr('href','educacion.html');
+	$('#link5').attr('href','agenda.html');
+	$('#link6').attr('href','#');
+
+	var PopUp1 = document.getElementById('PopUp');
+	var nPopUp = new XMLHttpRequest();
+	nPopUp.open('GET','./modulos/popup.html', false);
+	nPopUp.send();
+	PopUp1.innerHTML=nPopUp.responseText;
+
+	var registropop = document.getElementById('registropop');
+	var nregistropop = new XMLHttpRequest();
+	nregistropop.open('GET','./vistas/registronews.html',false);
+	nregistropop.send();
+	registropop.innerHTML=nregistropop.responseText;
+		/*SECCION 1*/
+	var sec1 = document.getElementById('secc1');
+	var nsec1 = new XMLHttpRequest();
+	nsec1.open('GET','./vistas/slider.html',false);
+	nsec1.send();
+	sec1.innerHTML=nsec1.responseText;
+		/*SECCION 3*/
+	var sec3 = document.getElementById('secc3');
+	var nsec3 = new XMLHttpRequest();
+	nsec3.open('GET','./vistas/datePiker.html',false);
+	nsec3.send();
+	sec3.innerHTML=nsec3.responseText;
+
+	
 }else{
 	console.log('no igual');
 	console.log(titulo);
