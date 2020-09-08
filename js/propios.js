@@ -87,7 +87,6 @@ if (titulo == 'Home'){
 	});
 
 }else if(titulo == 'Nosotros'){
-
 	sitio.innerText = 'Nosotros';
 	$('#link1').attr('href','.');
 	$('#link2').attr('href','nosotros.html');

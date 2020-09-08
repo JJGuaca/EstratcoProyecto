@@ -32,12 +32,8 @@ window.onload  = function(){
 	for(var k = 1; k<=31; k++){
 		var td = document.createElement('td');
 		var txto2 = document.createTextNode(k);
-		if(k % 7 == 0){
-			td.appendChild(txto2);
-			tr.appendChild(td);
-		}else{
-			td.appendChild(txto2);
-		}
+		td.appendChild(txto2);
+		tr.appendChild(td);
 	}
 
 	tblBody.appendChild(tr);
