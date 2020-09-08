@@ -1,7 +1,13 @@
 <form  method="POST" id="registro" onsubmit="return false">
 	<div class="container container-fluid">
 		<div class="row py-5">
-			<div class="col-lg-2 py-3" id="texto">Envíanos tu perfil <strong>y participa en nuestras convocatorias</strong> de proyecto</div>
+			<div class="col-lg-2 py-3" id="texto">Contáctanos 
+				<strong style="font-size: 200%; color: #66e4f2; margin: 1rem;">
+						<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+						</svg>
+				</strong>
+			</div>
 			<div class="col-lg-4 p-1">				
 				<div class="form-group">
 					<input type="text" class="form-control" placeholder="Nombre" required name="Nombre" id="Nombre">
@@ -15,13 +21,13 @@
 			</div>
 			<div class="col-lg-4 p-1">
 				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Profesión" required name="Profesion" id="Profesion">
+					<input type="text" class="form-control" placeholder="Asunto de interés" required name="Profesion" id="Profesion">
 				</div>
 				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Área de interes" required name="Area" id="Area">
+					<input type="text" class="form-control" placeholder="Escribe mensaje aquí" required name="Area" id="Area">
 				</div>
 				<div class="form-group">
-					<input type="submit" class="form-control bg-dark2" value="¡Hacer parte!" style="font-family: 'Poppins-Bold';" onclick="registro();">
+					<input type="submit" class="form-control bg-dark2" value="¡Enviar!" style="font-family: 'Poppins-Bold';" onclick="registro();" id="enviar">
 				</div>
 			</div>
 		</div>

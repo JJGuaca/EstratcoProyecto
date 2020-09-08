@@ -89,7 +89,7 @@ if (titulo == 'Home'){
 }else if(titulo == 'Nosotros'){
 	sitio.innerText = 'Nosotros';
 	$('#link1').attr('href','.');
-	$('#link2').attr('href','nosotros.html');
+	$('#link2').attr('href','#secc4');
 	$('#link4').attr('href','educacion.html');
 	$('#link5').attr('href','agenda.html');
 	$('#link6').attr('href','noticias.html');
@@ -174,7 +174,7 @@ if (titulo == 'Home'){
 
 	sitio.innerText='Educación';
 	$('#link1').attr('href','.');
-	$('#link2').attr('href','nosotros.html');
+	$('#link2').attr('href','nosotros.html#secc4');
 	$('#link3').attr('href','nosotros.html#secc2');
 	$('#link4').attr('href','#');
 	$('#link5').attr('href','agenda.html');
@@ -220,7 +220,11 @@ if (titulo == 'Home'){
 	nsec4.send();
 	sec4.innerHTML = nsec4.responseText;
 	var text = document.getElementById('texto');
-	text.innerHTML = '<h5 class="text-muted">Aca es para que los usuarios dejen sus datos para contactar para las inscripciones</h5>';
+	var prof = document.getElementById('Profesion');
+	var enviar = document.getElementById('enviar');
+	text.innerHTML = '<h6 class="text-muted">Para solicitar inscripción, diligencia el siguiente formulario</h6>';
+	prof.setAttribute('placeholder','Curso de interes');
+	enviar.setAttribute('value','¡Regístrate!')
 
 	$(window).scroll(function() {
 		if ($(document).scrollTop() > 100) {
@@ -253,7 +257,7 @@ if (titulo == 'Home'){
 }else if(titulo == 'Agenda'){
 	sitio.innerText='Educación';
 	$('#link1').attr('href','.');
-	$('#link2').attr('href','nosotros.html');
+	$('#link2').attr('href','nosotros.html#secc4');
 	$('#link3').attr('href','nosotros.html#secc2');
 	$('#link4').attr('href','educacion.html');
 	$('#link5').attr('href','#');
@@ -281,7 +285,7 @@ if (titulo == 'Home'){
 }else if(titulo == 'Noticias'){
 	sitio.innerText = 'Noticias';
 	$('#link1').attr('href','.');
-	$('#link2').attr('href','nosotros.html');
+	$('#link2').attr('href','nosotros.html#secc4');
 	$('#link3').attr('href','nosotros.html#secc2');
 	$('#link4').attr('href','educacion.html');
 	$('#link5').attr('href','agenda.html');
@@ -352,8 +356,13 @@ function remover(dir){
 	if(res == '#aplog' || 'ecInfo' || 'aseCon'){
 		$('#secc3').removeClass('hidden');
 	}
+	if(res == '#secc4'){
+		$(document).ready(function(){
+		$('#secc4').removeClass('hidden');
+		});
+	}
 	$(res).removeClass('hidden');
-
+	console.log(res);
 }
 
 $(window).scroll(function() {
