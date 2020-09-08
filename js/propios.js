@@ -349,9 +349,7 @@ if (titulo == 'Home'){
 			$('#fter').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
 	});
-	
-
-	
+		
 }else{
 	console.log('no igual');
 	console.log(titulo);
