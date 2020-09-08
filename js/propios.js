@@ -315,6 +315,12 @@ if (titulo == 'Home'){
 	nsec1.open('GET','./vistas/slider.html',false);
 	nsec1.send();
 	sec1.innerHTML=nsec1.responseText;
+			/*SECCION 2*/
+	var sec1 = document.getElementById('secc2');
+	var nsec1 = new XMLHttpRequest();
+	nsec1.open('GET','./vistas/noticias.html',false);
+	nsec1.send();
+	sec1.innerHTML=nsec1.responseText;
 	
 
 	
