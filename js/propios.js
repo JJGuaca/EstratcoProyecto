@@ -321,6 +321,34 @@ if (titulo == 'Home'){
 	nsec1.open('GET','./vistas/noticias.html',false);
 	nsec1.send();
 	sec1.innerHTML=nsec1.responseText;
+	$(window).scroll(function() {
+		if ($(document).scrollTop() > 200) {
+		 	$('#body').removeClass('minHeig');
+		 	$('#secc2').removeClass('hidden');
+		 	$('#n1').removeClass('hidden');
+		 	$('#n1').addClass('animate__animated animate__fadeInUp animate__slow');
+		} else {
+		 	$('#n1').removeClass('animate__animated animate__fadeInUp animate__slow');
+		}
+		if ($(document).scrollTop() > 400) {
+			$('#n2').removeClass('hidden');
+			$('#n2').addClass('animate__animated animate__fadeInUp animate__slow');
+		} else {
+			$('#n2').removeClass('animate__animated animate__fadeInUp animate__slow');
+		}
+		if ($(document).scrollTop() > 600) {
+			$('#n3').removeClass('hidden');
+			$('#n3').addClass('animate__animated animate__fadeInUp animate__slow');
+		} else {
+			$('#n3').removeClass('animate__animated animate__fadeInUp animate__slow');
+		}
+		if ($(document).scrollTop() > 1200) {
+			$('#fter').removeClass('hidden');
+			$('#fter').addClass('animate__animated animate__fadeInUp animate__slow');
+		} else {
+			$('#fter').removeClass('animate__animated animate__fadeInUp animate__slow');
+		}
+	});
 	
 
 	
