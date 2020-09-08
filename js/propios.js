@@ -322,7 +322,7 @@ if (titulo == 'Home'){
 	nsec1.send();
 	sec1.innerHTML=nsec1.responseText;
 	$(window).scroll(function() {
-		if ($(document).scrollTop() > 200) {
+		if ($(document).scrollTop() > 100) {
 		 	$('#body').removeClass('minHeig');
 		 	$('#secc2').removeClass('hidden');
 		 	$('#n1').removeClass('hidden');
@@ -330,19 +330,19 @@ if (titulo == 'Home'){
 		} else {
 		 	$('#n1').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 400) {
+		if ($(document).scrollTop() > 300) {
 			$('#n2').removeClass('hidden');
 			$('#n2').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#n2').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 600) {
+		if ($(document).scrollTop() > 500) {
 			$('#n3').removeClass('hidden');
 			$('#n3').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
 			$('#n3').removeClass('animate__animated animate__fadeInUp animate__slow');
 		}
-		if ($(document).scrollTop() > 1200) {
+		if ($(document).scrollTop() > 1000) {
 			$('#fter').removeClass('hidden');
 			$('#fter').addClass('animate__animated animate__fadeInUp animate__slow');
 		} else {
