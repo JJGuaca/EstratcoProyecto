@@ -1,3 +1,13 @@
+.img-thumbnail {
+    padding: .25rem;
+    background-color: #fff;
+    border: 0.5px solid transparent;
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px 6px #e4e4e4;
+}
+
 /*----- funcion de animacion---*/
 
 .hidden{
