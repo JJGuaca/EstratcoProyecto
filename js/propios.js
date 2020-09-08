@@ -282,6 +282,13 @@ if (titulo == 'Home'){
 	nregistropop.send();
 	registropop.innerHTML=nregistropop.responseText;
 
+		/*SECCION 3*/
+	var sec3 = document.getElementById('secc3');
+	var nsec3 = new XMLHttpRequest();
+	nsec3.open('GET','./vistas/datePiker.html',false);
+	nsec3.send();
+	sec3.innerHTML=nsec3.responseText;
+
 }else if(titulo == 'Noticias'){
 	sitio.innerText = 'Noticias';
 	$('#link1').attr('href','.');
@@ -308,12 +315,7 @@ if (titulo == 'Home'){
 	nsec1.open('GET','./vistas/slider.html',false);
 	nsec1.send();
 	sec1.innerHTML=nsec1.responseText;
-		/*SECCION 3*/
-	var sec3 = document.getElementById('secc3');
-	var nsec3 = new XMLHttpRequest();
-	nsec3.open('GET','./vistas/datePiker.html',false);
-	nsec3.send();
-	sec3.innerHTML=nsec3.responseText;
+	
 
 	
 }else{
