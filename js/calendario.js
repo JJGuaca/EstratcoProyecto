@@ -1,4 +1,7 @@
-window.onload = function(){
+//window.onload = function(){
+$(document).ready(function(){
+
+
 	var mesNombre= ['enero','febrero','marzo','abril', 'mayo', 'junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
 	var calendario = document.getElementById('calendar');
 	var dia = document.getElementById('dia');
@@ -105,6 +108,6 @@ window.onload = function(){
 	}
 
 
-}
+//}
 
-
+});
