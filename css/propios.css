@@ -18,24 +18,31 @@
     grid-template-columns: repeat(7, 1fr);
     text-align: center;
 }
-.ghead{
+.ghead {
     font-weight: 700;
     font-size: 19px;
     margin-bottom: 20px;
+    color: #fff;
 }
-.gbody{
+.gbody {
     grid-auto-rows: 40px;
-    color: rgb(71 80 86);
+    color: rgb(176 194 206);
     align-items: center;
     border: 1px solid #47505630;
     border-radius: 5px;
-
 }
 .gcell{
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+.gcell-Hoy{
+    background-color: rgb(102 228 242);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 1px rgb(71 80 86);
+    font-weight: 800;
+    color: rgb(71 80 86);
 }
 .gcell-select{
     background-color: rgb(71 80 86);
@@ -46,10 +53,9 @@
     color: rgb(102 228 242);
 }
 .gcell-unable {
-    opacity: 0.2;
+    opacity: 0.06;
     border-radius: 5px;
     font-weight: 700;
-    background-color: rgb(102, 228, 242, 0.54);
     cursor: wait;
 }
 
