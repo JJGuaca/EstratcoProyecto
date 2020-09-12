@@ -396,7 +396,7 @@ function remover(dir){
 		});
 	}
 	$(res).removeClass('hidden');
-	console.log(res);
+	//console.log(res);
 }
 
 $(window).scroll(function() {
